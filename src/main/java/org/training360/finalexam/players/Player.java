@@ -20,6 +20,7 @@ public class Player {
 
     private String name;
     private LocalDate birthDate;
+    @Enumerated(EnumType.STRING)
     private PositionType position;
 
     @ManyToOne

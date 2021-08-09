@@ -21,6 +21,10 @@ public class Team {
 
     private String name;
 
-    @OneToMany(mappedBy = "team") //cascade = CascadeType.ALL)
-    private List<Player> directors = new ArrayList<>();
+    @OneToMany(mappedBy = "team")//, cascade = CascadeType.PERSIST)
+    private List<Player> players = new ArrayList<>();
+
+    public Team(String name) {
+        this.name = name;
+    }
 }
