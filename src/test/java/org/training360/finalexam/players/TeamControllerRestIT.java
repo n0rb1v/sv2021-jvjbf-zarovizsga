@@ -1,29 +1,29 @@
-package org.training360.finalexam.players;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.test.context.jdbc.Sql;
-import org.training360.finalexam.teams.CreateTeamCommand;
-import org.training360.finalexam.teams.TeamDTO;
-import org.training360.finalexam.teams.UpdateWithExistingPlayerCommand;
-import org.zalando.problem.Problem;
-import org.zalando.problem.Status;
-
-import java.net.URI;
-import java.time.LocalDate;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Sql(statements = {"delete from players","delete from teams"})
-public class TeamControllerRestIT {
-
+//package org.training360.finalexam.players;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.boot.test.context.SpringBootTest;
+//import org.springframework.boot.test.web.client.TestRestTemplate;
+//import org.springframework.core.ParameterizedTypeReference;
+//import org.springframework.http.HttpMethod;
+//import org.springframework.test.context.jdbc.Sql;
+//import org.training360.finalexam.teams.CreateTeamCommand;
+//import org.training360.finalexam.teams.TeamDTO;
+//import org.training360.finalexam.teams.UpdateWithExistingPlayerCommand;
+//import org.zalando.problem.Problem;
+//import org.zalando.problem.Status;
+//
+//import java.net.URI;
+//import java.time.LocalDate;
+//import java.util.List;
+//
+//import static org.assertj.core.api.Assertions.assertThat;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@Sql(statements = {"delete from players","delete from teams"})
+//public class TeamControllerRestIT {
+//
 //    @Autowired
 //    TestRestTemplate template;
 //
@@ -207,4 +207,4 @@ public class TeamControllerRestIT {
 //
 //        assertEquals(Status.BAD_REQUEST,result.getStatus());
 //    }
-}
+//}
