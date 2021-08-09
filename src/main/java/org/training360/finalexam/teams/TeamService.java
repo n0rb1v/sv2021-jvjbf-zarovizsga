@@ -55,6 +55,7 @@ public class TeamService {
                 player.setTeam(team);
             }
         }
+        playerRepository.save(player);
         teamRepository.save(team);
         return modelMapper.map(team,TeamDTO.class);
     }
